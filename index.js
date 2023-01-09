@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const consoleTable = require('console.table');
 
 // Array of questions for user input
 const question = [

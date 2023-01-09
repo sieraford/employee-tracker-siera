@@ -1,4 +1,5 @@
 const mysql = require('mysql2');
+const consoleTable = require('console.table');
 
 const db = mysql.createConnection(
   {
@@ -12,5 +13,5 @@ const db = mysql.createConnection(
 
 
 db.query('SELECT * FROM department', function (err, results) {
-    console.log(results);
+    console.table(results);
   });
