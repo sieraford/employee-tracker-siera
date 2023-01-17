@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const consoleTable = require('console.table');
-const mysql = require('mysql2');
 
 const Department = require('./lib/Department');
 const Role = require('./lib/Role')
@@ -9,16 +8,6 @@ const Employee = require('./lib/Employee')
 const department = new Department();
 const role = new Role();
 const employee = new Employee();
-
-const db = mysql.createConnection(
-  {
-    host: 'localhost',
-    user: 'root',
-    password: 'Pass123#',
-    database: 'employees_db'
-  },
-  console.log(`Connected to the employees_db database.`)
-);
 
 // Question array for main menu prompt
 const question = [
@@ -39,7 +28,7 @@ const question = [
   }
 ];
 
-// Ask user what the would like to do
+// Ask user what they would like to do
 function promptUser() {
   inquirer
   .prompt(question)
@@ -48,7 +37,7 @@ function promptUser() {
   });
 }
 
-// Queries based off user input
+// Checks user response and makes queries based off selection
 function checkMenuSelection(answers) {
   if(answers.menu == "View all departments") {
     department.viewDepartments();
