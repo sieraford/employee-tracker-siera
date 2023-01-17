@@ -19,7 +19,7 @@ When you choose to add a role, then you are prompted to enter the name, salary, 
 When you choose to add an employee, then you are prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database.
 When you choose to update an employee role, then you are prompted to select an employee to update and their new role and this information is updated in the database.
 
-[DEMO VIDEO HERE](https://drive.google.com/file/d/1utN6UXfzc2c_veuVvxnVBRFdwEBeSvrz/view?usp=sharing)
+[DEMO VIDEO HERE](https://drive.google.com/file/d/1ipx7-oKeD531ZTlNicxRj-qwzSDRISyU/view?usp=sharing)
 
 ## License
 
