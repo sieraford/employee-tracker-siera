@@ -3,7 +3,7 @@ const consoleTable = require('console.table');
 
 const Department = require('./lib/Department');
 const Role = require('./lib/Role')
-const Employee = require('./lib/Employee')
+const Employee = require('./lib/Employee');
 
 const department = new Department();
 const role = new Role();
@@ -92,7 +92,7 @@ function checkMenuSelection(answers) {
       promptUser();
     });  
   } else {
-    return
+    console.log('Press CTRL + C to quit the application.')
   }
 }
 
